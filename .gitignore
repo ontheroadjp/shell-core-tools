@@ -8,7 +8,6 @@
 
 # Node
 node_modules/
-package-lock.json
 
 # VitePress
 docs/.vitepress/dist/
