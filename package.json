@@ -1,0 +1,25 @@
+{
+  "name": "shell-core-tools",
+  "version": "1.0.0",
+  "description": "A collection of lightweight shell utilities for everyday terminal workflows.",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ontheroadjp/shell-core-tools.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ontheroadjp/shell-core-tools/issues"
+  },
+  "homepage": "https://github.com/ontheroadjp/shell-core-tools#readme",
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}
