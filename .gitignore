@@ -1,3 +1,6 @@
+# zsh compiled
+*.zwc
+
 # macOS
 .DS_Store
 .AppleDouble
