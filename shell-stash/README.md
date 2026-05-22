@@ -21,7 +21,7 @@ The stash directory defaults to `~/.local/share/shell-stash/`. Override with `$S
 | `ss` | List contents of the stash |
 | `ss <file>` | Move a file/directory into the stash |
 | `ss -c <file>` | Copy a file/directory into the stash |
-| `ss p [file]` | Pop a file/directory out of the stash (interactive with peco if no name given) |
+| `ss p [file]` | Pop a file/directory out of the stash (interactive with fzf if no name given) |
 | `ss -c p [file]` | Copy a file/directory out of the stash |
 | `ss a` | Pop all items out of the stash |
 | `ss e` | Empty (delete all contents of) the stash |
@@ -40,7 +40,7 @@ $ ss
 
 # Pop a file back out interactively
 $ ss p
-# (peco opens to select the file)
+# (fzf opens to select the file)
 pop: notes.txt
 
 # Empty the stash
@@ -50,4 +50,4 @@ empty shell stash.
 
 ## Requirements
 
-- `peco` — required for interactive pop (`ss p` without a filename)
+- `fzf` — required for interactive pop (`ss p` without a filename)
