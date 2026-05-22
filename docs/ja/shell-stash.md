@@ -35,7 +35,7 @@ export SHELL_STASH_DATA_DIR="$HOME/my-stash"
 | `shell-stash.sh e` | スタッシュを空にする（全削除） |
 
 ::: tip インタラクティブ取り出し
-ファイル名なしで `shell-stash.sh p` を実行すると、`peco` でインタラクティブに選択できます。
+ファイル名なしで `shell-stash.sh p` を実行すると、`fzf` でインタラクティブに選択できます。
 :::
 
 ## 使用例
@@ -62,7 +62,7 @@ $ shell-stash.sh
 $ shell-stash.sh p notes.txt
 pop: notes.txt
 
-# インタラクティブ（peco が必要）
+# インタラクティブ（fzf が必要）
 $ shell-stash.sh p
 ```
 
@@ -93,4 +93,4 @@ $ shell-stash.sh -c p mydir  # コピーして取り出す（スタッシュに�
 
 ## 必要なツール
 
-- `peco` — ファイル名なしの `shell-stash.sh p` に必要
+- `fzf` — ファイル名なしの `shell-stash.sh p` に必要

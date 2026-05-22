@@ -57,7 +57,8 @@ case "${arg[0]}" in
         ;;
     p | pop )
         if [ -z "${arg[1]}" ]; then
-            target=$(find "${stashDir}" -mindepth 1 -maxdepth 1 | peco --prompt "Shell Stash>")
+            selected=$(find "${stashDir}" -mindepth 1 -maxdepth 1 -exec basename {} \; | fzf --prompt "Shell Stash> ")
+            target="${stashDir}/${selected}"
         else
             target="${stashDir}/${arg[1]}"
         fi

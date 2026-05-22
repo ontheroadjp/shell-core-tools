@@ -35,7 +35,7 @@ export SHELL_STASH_DATA_DIR="$HOME/my-stash"
 | `shell-stash.sh e` | 清空暂存区（全部删除） |
 
 ::: tip 交互式取出
-不指定文件名直接运行 `shell-stash.sh p`，将通过 `peco` 进行交互式选择。
+不指定文件名直接运行 `shell-stash.sh p`，将通过 `fzf` 进行交互式选择。
 :::
 
 ## 使用示例
@@ -62,7 +62,7 @@ $ shell-stash.sh
 $ shell-stash.sh p notes.txt
 pop: notes.txt
 
-# 交互式选择（需要 peco）
+# 交互式选择（需要 fzf）
 $ shell-stash.sh p
 ```
 
@@ -93,4 +93,4 @@ $ shell-stash.sh -c p mydir  # 复制取出，暂存区中保留
 
 ## 依赖
 
-- `peco` — 不指定文件名时的 `shell-stash.sh p` 所需
+- `fzf` — 不指定文件名时的 `shell-stash.sh p` 所需

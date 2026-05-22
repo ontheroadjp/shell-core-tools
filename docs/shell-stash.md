@@ -35,7 +35,7 @@ export SHELL_STASH_DATA_DIR="$HOME/my-stash"
 | `shell-stash.sh e` | Empty (delete all contents of) the stash |
 
 ::: tip Interactive pop
-Running `shell-stash.sh p` without a filename opens an interactive selector via `peco`.
+Running `shell-stash.sh p` without a filename opens an interactive selector via `fzf`.
 :::
 
 ## Usage
@@ -62,7 +62,7 @@ $ shell-stash.sh
 $ shell-stash.sh p notes.txt
 pop: notes.txt
 
-# Interactively (requires peco)
+# Interactively (requires fzf)
 $ shell-stash.sh p
 ```
 
@@ -93,4 +93,4 @@ If a file with the same name already exists in the stash, it is automatically re
 
 ## Requirements
 
-- `peco` — required for interactive pop (`shell-stash.sh p` without a filename)
+- `fzf` — required for interactive pop (`shell-stash.sh p` without a filename)
